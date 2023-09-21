@@ -13,10 +13,7 @@ provider "azurerm" {
   }
 }
 resource "azurerm_resource_group" "rg" {
-  name     = "myTFResourceGroup"
+  name     = "TestGitRSG"
   location = "westus2"
 }
 
-output "id"{
-  value = data.azurerm_resource_group.rg.id
-}
